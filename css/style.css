@@ -26,6 +26,7 @@ html , body{
 	float: right;
 	transition: all .3s;
 	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
 }
 
 #nav-btns a:hover{
