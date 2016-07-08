@@ -1,19 +1,50 @@
 html , body{
 	width: 100%;
 	height: 100%;
-	background: #272727 ;
+	background-color : #272727 ;
+	z-index: 0;
+	color: #FFF;
 }
 
-nav{
+/* Navigation */
+.nav{
 	width: 100%;
-	background-color: #000;
+	background-color: rgb(20, 20, 20);
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#nav-btns{
+	margin-right: 2em;
 }
 
 #nav-btns a{
 	flex: right;
-	color: white;
+	color: #f2f2f2;
 	font-size: 2em;
 	text-decoration: none;
-	padding: .3em .6em;
+	padding: .5em .7em;
 	float: right;
+	transition: all .3s;
+}
+
+#nav-btns a:hover{
+	color: #000;
+	background-color: #FFF
+}
+
+/* Section - Landing Page */
+
+#LandingPage{
+	height: 100%;
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+	color: #FFF;
+	font-size: 12vw !important;
+	margin-top: 30vh !important;
+	font-weight: 100 !important;
+	text-transform: uppercase;
 }
