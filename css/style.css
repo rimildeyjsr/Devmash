@@ -5,12 +5,29 @@ html , body{
 	color: #FFF;
 }
 
+/*custom scrollbar */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FFF;
+}
+
 /* Navigation */
 .nav{
 	width: 100%;
 	background-color: #1e1d1d;
 	display: flex;
 	flex-direction: row-reverse;
+	-webkit-box-shadow: 0px -14px 91px 7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -14px 91px 7px rgba(0,0,0,0.75);
+	box-shadow: 0px -14px 91px 7px rgba(0,0,0,0.75);
 }
 
 #nav-btns{
@@ -38,8 +55,8 @@ html , body{
 /* Section - Landing Page */
 
 #LandingPage{
-	height: 100%;
-	width: 100%;p
+	height: 70%;
+	width: 100%;
 }
 
 
