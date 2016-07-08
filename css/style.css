@@ -22,11 +22,12 @@ html , body{
 	color: #f2f2f2;
 	font-size: 2em;
 	text-decoration: none;
-	padding: .5em .7em;
+	padding: .5em 1.3em;
 	float: right;
 	transition: all .3s;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 500;
+	cursor:
 }
 
 #nav-btns a:hover{
@@ -41,6 +42,11 @@ html , body{
 	width: 100%;p
 }
 
+
+section{
+	min-height: 100vh;
+}
+
 p{
 	text-align: center;
 	color: #FFF;
@@ -50,5 +56,50 @@ p{
 	text-transform: uppercase;
 	font-weight: 300 !important;
 	font-family: 'Roboto', sans-serif;
-	 letter-spacing: 25px;
+	letter-spacing: 25px;
+}
+
+
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+	bottom: 5%;
+  margin-left:-5em;
+  width:10em;
+  height:10em;
+  padding:2em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+}
+
+  @-webkit-keyframes arrows {
+    0% { top:20%; }
+    10% { top:32%; }
+    20% { top:20%; }
+    30% { top:32%; }
+    40% { top:10%; }
+    50% { top:32%; }
+    60% { top:20%; }
+    70% { top:32%; }
+    80% { top:10%; }
+    90% { top:32%; }
+    100% { top:20%; }
+  }
+
+.fa-angle-down{
+	position:relative;
+	top: 20%;
+	left: 25%;
+	font-size: 10em !important;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	-webkit-animation: arrows 2.8s 0.4s;
+	-webkit-animation-delay: 3s;
+}
+
+.fa-angle-down:hover{
+	-webkit-animation: arrows 2.8s 0.4s;
 }
